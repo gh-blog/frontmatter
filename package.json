@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gh-blog/gh-blog-frontmatter"
+    "url": "https://github.com/gh-blog/frontmatter"
   },
   "keywords": [
     "gh-blog-plugin",
@@ -19,9 +19,9 @@
   "author": "Muhammad Fawwaz Orabi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gh-blog/gh-blog-frontmatter/issues"
+    "url": "https://github.com/gh-blog/frontmatter/issues"
   },
-  "homepage": "https://github.com/gh-blog/gh-blog-frontmatter",
+  "homepage": "https://github.com/gh-blog/frontmatter",
   "dependencies": {
     "front-matter": "^0.2.0",
     "through2": "^0.6.1"
