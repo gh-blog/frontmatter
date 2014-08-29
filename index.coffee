@@ -1,8 +1,8 @@
 through2 = require 'through2'
 frontmatter = require 'front-matter'
 
-# requires ['html']
-# should run before 'markdown'
+# requires 'isPost'
+# should run before 'html'
 
 module.exports = (options) ->
     processFile = (file, enc, done) ->
@@ -13,7 +13,7 @@ module.exports = (options) ->
             if result.body
                 file.contents = new Buffer result.body
 
-            for key, value in result.attributes
+            for key, value of result.attributes
                 file[key] = value
 
         done null, file
