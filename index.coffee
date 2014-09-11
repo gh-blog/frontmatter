@@ -1,12 +1,12 @@
 through2 = require 'through2'
 frontmatter = require 'front-matter'
+path = require 'path'
 
-# requires 'isPost'
-# should run before 'html'
+mdRegExp = /.md|.mdown|.markdown|.gfm/i
 
 module.exports = (options) ->
     processFile = (file, enc, done) ->
-        if file.isPost
+        if file.isPost and path.extname(file.path).match mdRegExp
             text = String file.contents
             result = frontmatter text
 
